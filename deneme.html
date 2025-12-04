@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;}</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -87,5 +90,53 @@
 <textarea name="mesaj" id="mesaj" rows="1" cols="0"></textarea><br><br>
 <input type="submit" value="gönder">
 </form>
+<hr>
+<br>
+<!--tablo-->
+
+<table >
+   
+    <tr>
+        <th>meyve</th>
+        <th>fiyat</th>
+    </tr>
+    <tr>
+        <td>üzüm</td>
+        <td>100tl</td>
+    </tr>
+    
+</table>
+<hr>
+<br>
+<!--tablo form-->
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; ">
+     <form action="submit_form.php" method="post"></form>
+    <tr>
+        <th><label for="email">Eposta</label></th>
+        <th><input type="text" id="email" name="email" required></th>
+    </tr>
+    <th>
+        <label for="password">Şifre</label>
+    </th>
+    <th>
+       <input type="password" id="password" name="password"required> 
+    </th>
+    <tr>
+        <th>
+            <label for="mesaj">Mesaj bırakınız</label>
+        </th>
+        <th>
+            <textarea name="mesaj" id="mesaj" rows="4" cols="40"></textarea><br><br>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center;">
+            <button type="submit">GÖNDER</button>
+        </td>
+    </tr>
+    </form>
+</table>
+
+
 </body>
 </html>
