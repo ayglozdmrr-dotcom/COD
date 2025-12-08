@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLK SAYFA</title>
+    
+</head>
+<body >
+    <div style="background-color: crimson;">HTML</div><br>
+    <p>Html bir sayfanın en temelidir html içerisinde birden fazla çeşiti vardır. htmlin şekillenmesi için içinde yardımcı yazılım dilleri vardır bunların içerisinde:
+        
+        <li>CSS</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C#</li>
+        
+    </p><br>
+    <div> Bu örenkte form işleyeceğiz formumuzun en temel etiketleri "label ve input" bakalım bu etiketlere yardımcı etiketlerle beraber neler yapa bileceğiz: <br><br><br>
+    <form>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="email"required> <br>
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" placeholder="Şifre" required><br>
+        <input type="submit" value="GÖNDER">
+    </form><br><br><br>
+    </div>
+    <div>
+           Tabi bunu daha nizamlı düzgün şekilde durması için form ve table etiketlerini bir arada kullana biliriz. Bu şekilde kullanım boxların aynı sırada olmasını ve daha düzenli göze hitap eden şekilde olmasını sağlar bunla alakalı da şu örneği yapalım: <br><br><br>
+           <table >
+            <form >
+                <tr>
+                <th>
+                    <label for="email">E-mail:</label>
+                </th>
+                <th> 
+                    <input type="text" inputmode="email" name="email" placeholder="E-mail" required>
+                </th>
+                </tr>
+                <tr>
+                   <th><label for="password">Şifre:</label></th> 
+                   <th><input type="password" id="password" name="password" placeholder="Şifre" required ></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="GÖNDER"></th>
+                </tr>
+
+            </form>
+           </table>
+    </div>
+</body>
+</html>
